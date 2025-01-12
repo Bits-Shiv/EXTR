@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Vertically center items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
+}
+
+.nav-left, .nav-right {
+    /* No specific width needed, takes up content space */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+.website-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #00D09C; /* Green - Apply to the whole name */
+  }
+
+.nav-center {
+    display: flex;
+    gap: 100px;
+}
+
+.nav-icon {
+    position: relative; /* ye beech wale icon ke size aur color wagera ke hai changes ................ */
+    font-size: 30px;
+    color: #0074E4;
+    transition: transform 0.5s;
+    font-weight: 200;
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-icon:hover {
+    transform: scale(1.1);
+}
+
+.nav-icon .tooltip {
+    position: absolute;
+    top: 100%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    color: #000000;
+    visibility: hidden;
+    transition:  visibility 0.2s;
+    white-space: nowrap;
+}
+
+.nav-icon:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Other CSS rules... */
+
+.nav-right {
+    display: flex; /* Use flexbox to center the profile pic */
+    align-items: center; /* Center vertically */
+}
+
+.profile-pic-container {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Make it a circle */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Hide any part of the image that falls outside the circle */
+    border: 2px solid #fff; /* Optional: Add a border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+}
+
+.profile-pic {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.nav-right .nav-logo:hover {
+    transform: scale(1.1);
+    /* Scale on hover */
+}
